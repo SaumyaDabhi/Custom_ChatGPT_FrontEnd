@@ -28,7 +28,7 @@ function App() {
         body: JSON.stringify({ prompt }),
       };
 
-      const res = await fetch("http://127.0.0.1:5000/ask", requestOptions);
+      const res = await fetch("https://resilient-pasca-1ee461.netlify.app/ask", requestOptions);
 
       if (!res.ok) {
         throw new Error("Something went wrong");
